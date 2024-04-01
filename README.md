@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Olá pessoal, apresento a vocês o formulário Cep utilizando o React Hook Form e a Biblioteca Zod.
 
-## Getting Started
+- Conceitos abordados sobre React, Tailwind, Zod, Hook Form e consumo de API;
+- Criação de um formulário com preenchimento automático de endereço após o cep válido ser digitado.
+- Uso da API https://viacep.com.br/. 
+- Validações de Erros.
 
-First, run the development server:
+<hr>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- O projeto se resume a um cadastro de CEP, inserido pelo usuário, resultando nos dados de endereço do CEP inserido nos outros campos imput disponiveis automaticamente, com o uso do Reac Hook form  oferecendo um desempenho otimizado, pois minimiza a quantidade de renderizações necessárias. Além disso estou utilizando a biblioteca Zod para tratamento de erros e validação dos tipos de dados, para garantir que correspondam à estrutura esperada. Ademais, utilizei o Tailwind para estilizar o simples formulário, excelentes ferramentas para validação e desempenho de uma aplicação.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Segue imagem do formulário antes da busca:
+<img src="./public/formulario1.png" alt="print">
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Segue imagem após uma busca errada feita pelo usuário:
+<img src="./public/errosCep.png" alt="print">
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Segue imagem após uma busca correta feita pelo usuário:
+<img src="./public/buscaOKCep.png" alt="print">
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -24,9 +24,13 @@ export default function Home() {
   }  
 
   const handleBlur= ()=>{
+    
       fetch(`https://viacep.com.br/ws/${getValues('cep')}/json/`)
       .then(response=> response.json())
       .then((data) =>{
+        if(data.erro == true){
+          return setErro('CEP não encontrado.')
+        }
         setErro('')
         setValue('rua', data.logradouro)
         setValue('bairro', data.bairro)

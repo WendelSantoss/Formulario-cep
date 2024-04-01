@@ -11,7 +11,7 @@ export default function Input({id, label, type, register, error, handleblur}){
             className="border border-gray-300 rounded-md p-2"
             {...register(id)} onBlur={handleblur}></input>
 
-            {error && <p className=" text-white font-bold ">{error.message}</p>}
+            {error && <p className=" text-red-500 font-bold ">{error.message}</p>}
         
 
         </div>
